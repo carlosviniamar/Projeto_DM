@@ -50,11 +50,6 @@ class _NavegacaoState extends State<Navegacao> {
           icon: Icons.settings,
           onClicked: () => selectedItem(context, 5),
         ),
-        buildMenuItem(
-          text: 'Menu inicial',
-          icon: Icons.house,
-          onClicked: () => selectedItem(context, 6),
-        ),
       ]),
     ));
   }

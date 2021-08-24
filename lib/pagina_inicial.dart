@@ -13,9 +13,14 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: Navegacao(),
-      appBar: AppBar(
-        title: Text('Provider'),
-      ),
+      appBar: AppBar(title: Text('Provider'), actions: <Widget>[
+        IconButton(
+            onPressed: () {},
+            icon: Icon(
+              Icons.house,
+              color: Colors.white,
+            ))
+      ]),
     );
   }
 }

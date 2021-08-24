@@ -13,9 +13,16 @@ class _PerfilState extends State<Perfil> {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: Navegacao(),
-      appBar: AppBar(
-        title: Text('Seu Perfil'),
-      ),
+      appBar: AppBar(title: Text('Seu Perfil'), actions: <Widget>[
+        IconButton(
+            onPressed: () {
+              Navigator.of(context).pushReplacementNamed('/home');
+            },
+            icon: Icon(
+              Icons.house,
+              color: Colors.white,
+            ))
+      ]),
     );
   }
 }

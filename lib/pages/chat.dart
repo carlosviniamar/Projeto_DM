@@ -13,9 +13,16 @@ class _ChatState extends State<Chat> {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: Navegacao(),
-      appBar: AppBar(
-        title: Text('Chat'),
-      ),
+      appBar: AppBar(title: Text('Chat'), actions: <Widget>[
+        IconButton(
+            onPressed: () {
+              Navigator.of(context).pushReplacementNamed('/home');
+            },
+            icon: Icon(
+              Icons.house,
+              color: Colors.white,
+            ))
+      ]),
     );
   }
 }

@@ -13,9 +13,16 @@ class _ServicosState extends State<Servicos> {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: Navegacao(),
-      appBar: AppBar(
-        title: Text('Serviços'),
-      ),
+      appBar: AppBar(title: Text('Serviços'), actions: <Widget>[
+        IconButton(
+            onPressed: () {
+              Navigator.of(context).pushReplacementNamed('/home');
+            },
+            icon: Icon(
+              Icons.house,
+              color: Colors.white,
+            ))
+      ]),
     );
   }
 }

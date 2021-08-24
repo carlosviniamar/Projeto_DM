@@ -13,9 +13,16 @@ class _Prestador_ServicoState extends State<Prestador_Servico> {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: Navegacao(),
-      appBar: AppBar(
-        title: Text('Prestadores de Serviços'),
-      ),
+      appBar: AppBar(title: Text('Prestadores de Serviços'), actions: <Widget>[
+        IconButton(
+            onPressed: () {
+              Navigator.of(context).pushReplacementNamed('/home');
+            },
+            icon: Icon(
+              Icons.house,
+              color: Colors.white,
+            ))
+      ]),
     );
   }
 }

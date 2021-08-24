@@ -13,9 +13,16 @@ class _FavoritosState extends State<Favoritos> {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: Navegacao(),
-      appBar: AppBar(
-        title: Text('Favoritos'),
-      ),
+      appBar: AppBar(title: Text('Favoritos'), actions: <Widget>[
+        IconButton(
+            onPressed: () {
+              Navigator.of(context).pushReplacementNamed('/home');
+            },
+            icon: Icon(
+              Icons.house,
+              color: Colors.white,
+            ))
+      ]),
     );
   }
 }
