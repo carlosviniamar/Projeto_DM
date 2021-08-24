@@ -1,4 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:projeto/login_page.dart';
+import 'package:projeto/pages/chat.dart';
+import 'package:projeto/pages/configs.dart';
+import 'package:projeto/pages/favoritos.dart';
+import 'package:projeto/pages/perfil.dart';
+import 'package:projeto/pages/prestador_servico.dart';
+import 'package:projeto/pages/servicos.dart';
 import 'package:projeto/pagina_inicial.dart';
 
 class AppWidget extends StatelessWidget {
@@ -19,8 +26,14 @@ class AppWidget extends StatelessWidget {
         routes: {
           //rotas
 
-          '/': (context) => HomePage(), //chamando a página de Login
-          '/home': (context) => HomePage(), //chamando a página Home
+          '/': (context) => LoginPage(), //chamando a página de Login
+          '/home': (context) => HomePage(),
+          '/servicos': (context) => Servicos(),
+          '/favoritos': (context) => Favoritos(),
+          '/prestadores': (context) => Prestador_Servico(),
+          '/chat': (context) => Chat(),
+          '/perfil': (context) => Perfil(),
+          '/config': (context) => Configuracoes(), //chamando a página Home
         });
   }
 }
