@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:projeto/login_page.dart';
 import 'package:projeto/pages/servicos.dart';
 
 class Navegacao extends StatefulWidget {
@@ -14,9 +15,12 @@ class _NavegacaoState extends State<Navegacao> {
   get onclicked => null;
   @override
   Widget build(BuildContext context) {
+    LoginPage loginpage = LoginPage();
+    final email = loginpage.email;
+    // final icon = IconData;
     return Drawer(
         child: Material(
-      color: Colors.deepOrange[400],
+      color: Colors.teal[900],
       child: ListView(padding: padding, children: <Widget>[
         const SizedBox(height: 48),
         buildMenuItem(
@@ -70,6 +74,7 @@ class _NavegacaoState extends State<Navegacao> {
     );
   }
 
+//Rotas
   void selectedItem(BuildContext context, int index) {
     switch (index) {
       case 0:

@@ -5,12 +5,14 @@ import 'package:projeto/pagina_inicial.dart';
 class LoginPage extends StatefulWidget {
   LoginPage({Key? key}) : super(key: key);
 
+  get email => null;
+
   @override
   _LoginPageState createState() => _LoginPageState();
 }
 
 class _LoginPageState extends State<LoginPage> {
-  String email = "";
+  String email = "carlos";
   String senha = "";
   @override
   Widget build(BuildContext context) {
