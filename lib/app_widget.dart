@@ -5,6 +5,7 @@ import 'package:projeto/pages/configs.dart';
 import 'package:projeto/pages/favoritos.dart';
 import 'package:projeto/pages/perfil.dart';
 import 'package:projeto/pages/prestador_servico.dart';
+import 'package:projeto/pages/search.dart';
 import 'package:projeto/pages/servicos.dart';
 import 'package:projeto/pagina_inicial.dart';
 
@@ -26,14 +27,15 @@ class AppWidget extends StatelessWidget {
         routes: {
           //rotas
 
-          '/': (context) => LoginPage(), //chamando a página de Login
+          '/': (context) => HomePage(), //chamando a página de Login
           '/home': (context) => HomePage(),
           '/servicos': (context) => Servicos(),
           '/favoritos': (context) => Favoritos(),
           '/prestadores': (context) => Prestador_Servico(),
           '/chat': (context) => Chat(),
           '/perfil': (context) => Perfil(),
-          '/config': (context) => Configuracoes(), //chamando a página Home
+          '/config': (context) => Configuracoes(),
+          '/search': (context) => Search(), //chamando a página Home
         });
   }
 }

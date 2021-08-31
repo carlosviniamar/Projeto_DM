@@ -1,6 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:projeto/Navegacao.dart';
+import 'package:projeto/RegrasDeNegocio/pesquisa.dart';
+import 'package:projeto/RegrasDeNegocio/services.dart';
+import 'package:projeto/pages/search.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -10,6 +13,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  Services servicos = new Services();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,6 +30,7 @@ class _HomePageState extends State<HomePage> {
                   fontWeight: FontWeight.bold,
                 )),
             margin: EdgeInsets.all(10),
+            alignment: Alignment.bottomLeft,
           ),
           Container(
               child: const Text(
@@ -38,9 +43,14 @@ class _HomePageState extends State<HomePage> {
                 left: 10,
               )),
           Container(
+            //barra de Pesquisa
             child: CupertinoSearchTextField(
-              placeholder: 'Procure por serviços ou profissionais',
-            ),
+                placeholder: 'Procure por serviços ou profissionais',
+                onChanged: (value) async {
+                  {
+                    Navigator.of(context).pushReplacementNamed('/search');
+                  }
+                }),
             margin: EdgeInsets.all(10),
           ),
           Row(
@@ -55,7 +65,10 @@ class _HomePageState extends State<HomePage> {
                             Icons.home_repair_service_sharp,
                             color: Colors.teal[900],
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.of(context)
+                                .pushReplacementNamed('/servicos');
+                          },
                           iconSize: 80,
                         ),
                         Text('Serviços')
@@ -74,7 +87,10 @@ class _HomePageState extends State<HomePage> {
                         IconButton(
                           icon: Icon(Icons.favorite_outline,
                               color: Colors.teal[600]),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.of(context)
+                                .pushReplacementNamed('/favoritos');
+                          },
                           iconSize: 80,
                         ),
                         Text('Favoritos')
@@ -97,7 +113,10 @@ class _HomePageState extends State<HomePage> {
                         IconButton(
                           icon: Icon(Icons.design_services_outlined,
                               color: Colors.teal[900]),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.of(context)
+                                .pushReplacementNamed('/prestadores');
+                          },
                           iconSize: 80,
                         ),
                         Text('Prestadores')
@@ -116,7 +135,9 @@ class _HomePageState extends State<HomePage> {
                         IconButton(
                           icon: Icon(Icons.chat_outlined,
                               color: Colors.teal[600]),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.of(context).pushReplacementNamed('/chat');
+                          },
                           iconSize: 80,
                         ),
                         Text('Chat')
@@ -139,7 +160,10 @@ class _HomePageState extends State<HomePage> {
                         IconButton(
                           icon: Icon(Icons.people_outline,
                               color: Colors.teal[900]),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.of(context)
+                                .pushReplacementNamed('/perfil');
+                          },
                           iconSize: 80,
                         ),
                         Text('Seu Perfil')
@@ -158,7 +182,10 @@ class _HomePageState extends State<HomePage> {
                         IconButton(
                           icon: Icon(Icons.settings_outlined,
                               color: Colors.teal[600]),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.of(context)
+                                .pushReplacementNamed('/config');
+                          },
                           iconSize: 80,
                         ),
                         Text('Configurações')
