@@ -45,12 +45,8 @@ class _HomePageState extends State<HomePage> {
           Container(
             //barra de Pesquisa
             child: CupertinoSearchTextField(
-                placeholder: 'Procure por serviços ou profissionais',
-                onChanged: (value) async {
-                  {
-                    Navigator.of(context).pushReplacementNamed('/search');
-                  }
-                }),
+              placeholder: 'Procure por serviços ou profissionais',
+            ),
             margin: EdgeInsets.all(10),
           ),
           Row(

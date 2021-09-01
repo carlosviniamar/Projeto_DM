@@ -27,7 +27,7 @@ class AppWidget extends StatelessWidget {
         routes: {
           //rotas
 
-          '/': (context) => HomePage(), //chamando a página de Login
+          '/': (context) => LoginPage(), //chamando a página de Login
           '/home': (context) => HomePage(),
           '/servicos': (context) => Servicos(),
           '/favoritos': (context) => Favoritos(),

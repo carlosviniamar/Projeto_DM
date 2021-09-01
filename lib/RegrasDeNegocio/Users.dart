@@ -5,15 +5,19 @@ class User {
   final String name;
   final String email;
   final String avatarUrl;
-  final IconData avaliacao;
+  final String time;
   final String funcao;
+  final String imageUrl;
+  final String msg;
 
   const User({
     required this.id,
     required this.name,
     required this.email,
     required this.avatarUrl,
-    required this.avaliacao,
     required this.funcao,
+    required this.imageUrl,
+    required this.time,
+    required this.msg,
   });
 }

@@ -47,10 +47,7 @@ class _ServicosState extends State<Servicos> {
                             Icons.house_sharp,
                             color: Colors.teal[900],
                           ),
-                          onPressed: () {
-                            Navigator.of(context)
-                                .pushReplacementNamed('/servicos');
-                          },
+                          onPressed: () {},
                           iconSize: 80,
                         ),
                         Text(
@@ -72,10 +69,7 @@ class _ServicosState extends State<Servicos> {
                         IconButton(
                           icon: Icon(Icons.design_services_outlined,
                               color: Colors.teal[600]),
-                          onPressed: () {
-                            Navigator.of(context)
-                                .pushReplacementNamed('/favoritos');
-                          },
+                          onPressed: () {},
                           iconSize: 80,
                         ),
                         Text(
@@ -101,10 +95,7 @@ class _ServicosState extends State<Servicos> {
                         IconButton(
                           icon: Icon(Icons.computer_outlined,
                               color: Colors.teal[900]),
-                          onPressed: () {
-                            Navigator.of(context)
-                                .pushReplacementNamed('/prestadores');
-                          },
+                          onPressed: () {},
                           iconSize: 80,
                         ),
                         Text('Tecnologia')
@@ -123,9 +114,7 @@ class _ServicosState extends State<Servicos> {
                         IconButton(
                           icon: Icon(Icons.business_outlined,
                               color: Colors.teal[600]),
-                          onPressed: () {
-                            Navigator.of(context).pushReplacementNamed('/chat');
-                          },
+                          onPressed: () {},
                           iconSize: 80,
                         ),
                         Text('Consultoria')
@@ -148,10 +137,7 @@ class _ServicosState extends State<Servicos> {
                         IconButton(
                           icon: Icon(Icons.medical_services,
                               color: Colors.teal[900]),
-                          onPressed: () {
-                            Navigator.of(context)
-                                .pushReplacementNamed('/perfil');
-                          },
+                          onPressed: () {},
                           iconSize: 80,
                         ),
                         Text('Saúde')
@@ -169,10 +155,7 @@ class _ServicosState extends State<Servicos> {
                       children: <Widget>[
                         IconButton(
                           icon: Icon(Icons.class_, color: Colors.teal[600]),
-                          onPressed: () {
-                            Navigator.of(context)
-                                .pushReplacementNamed('/config');
-                          },
+                          onPressed: () {},
                           iconSize: 80,
                         ),
                         Text('Aulas')
@@ -195,10 +178,7 @@ class _ServicosState extends State<Servicos> {
                         IconButton(
                           icon: Icon(Icons.nature_people_outlined,
                               color: Colors.teal[900]),
-                          onPressed: () {
-                            Navigator.of(context)
-                                .pushReplacementNamed('/perfil');
-                          },
+                          onPressed: () {},
                           iconSize: 80,
                         ),
                         Text(
@@ -220,10 +200,7 @@ class _ServicosState extends State<Servicos> {
                         IconButton(
                           icon: Icon(Icons.house_outlined,
                               color: Colors.teal[600]),
-                          onPressed: () {
-                            Navigator.of(context)
-                                .pushReplacementNamed('/config');
-                          },
+                          onPressed: () {},
                           iconSize: 80,
                         ),
                         Text(
